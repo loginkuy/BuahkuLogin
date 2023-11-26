@@ -1,0 +1,534 @@
+/*IMPORT FONT*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+/* 
+font-family: 'Poppins', sans-serif; 
+font-family: 'Dosis', sans-serif;
+*/
+
+
+/*IMPORT VARIABLE*/
+:root {
+    --primary-color: #FF862C;
+    --dark-color: #0f0f0f;
+    --gray-color: gray;
+
+    --h1-font-size: 40px;
+    --h2-font-size: 32px;
+    --small-font-size: 14px
+}
+
+/*RESPONSIVE CSS*/
+@media only screen and (max-width: 768px) and (max-width: 991px) {
+    .carousel-caption {
+        bottom: 370px;
+    }
+    .carousel-caption P{
+        width: 100% ;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav {
+        text-align :center;
+    }
+    .carousel-caption {
+        bottom: 125px;
+    }
+    .carousel-caption h5 {
+        font-size: 17px;
+    }
+    .carousel-caption a {
+        padding: 10px 15px;
+    }
+    .carousel-caption p {
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+    .wrapper-1 .container .hero-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .wrapper-1 .container .hero-section{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*--------------------------------------------------------------------------RESET CSS--------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+body {
+    background: #f1fbff;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------------------------GLOBAL CSS-----------------------------------------------------------*/
+section-padding {
+    padding: 100px 0;
+}
+/*---------------------------------------------------------------------------------CSS--------------------------------------------------------------------------*/
+/*NAVBAR*/
+.navbar {
+    margin-bottom: 14%;
+}
+.bg-pink{
+    background-color: #e1f7e1 ;
+}
+
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active {
+    color:var(--primary-color);
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color:#000;
+}
+
+.navbar-light .navbar-nav .navbar-link {
+    color: #000;
+}
+
+.w-100 {
+    height: 100vh;
+}
+
+/*HEADER*/
+.container, h1 {
+    font-weight: 700;
+}
+
+/*NILAI GIZI*/
+.p-4 img{
+    max-width: 485px;
+}
+
+.pb-2 {
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+
+.table-group-divider td{
+    font-weight: 600;
+    padding: 2%;
+}
+
+.table-group-divider span {
+    font-weight: 400;
+}
+
+.container-bag2 {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+}
+
+/*DETAIL BUDIDAYA BAG 1*/
+.wrapper {
+    margin-top: 1%;
+    margin-bottom: 14%;
+    width: 70%;
+    margin-left: 15.5%;
+}
+
+.wrapper img {
+    max-width: 320px;
+    float: left;
+    border: 3px solid #000;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.text-box1 {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*PAGE TIPS BUDIDAYA*/
+.text-box h3 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+}
+
+.text-box h2 {
+    font-weight: 700;
+}
+
+/*TIPS SUKSES BUDIDAYA*/
+.wrapper-1 {
+    width: 100%;
+    background-color: white;
+    padding-bottom: 5%;
+
+}
+
+.wrapper-1 .container {
+    padding-top: 20px;
+}
+
+.wrapper-1 .container .hero-section {
+    width: 700px;
+    margin: 0px auto;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.wrapper-1 .container .hero-section .gallery {
+    width: 100%;
+    position: relative;
+
+}
+
+.wrapper-1 .container .hero-section .gallery .image-section {
+    width: 100%;
+}
+
+.wrapper-1 .container .hero-section .gallery .image-section img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #eee;
+    padding: 5px;
+    display: block;
+}
+
+.wrapper-1 .container .hero-section .gallery .caption {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding:15px;
+    top: 0;
+    Left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: rgba(255,255,255,0.5);
+    color: #222;
+    opacity: 0;
+    transition: opacity 0.30s;
+    &:hover{
+      opacity: 1;
+    }
+}
+
+.wrapper-1 .container .hero-section .gallery .caption h2 {
+    color: #000;
+}
+
+/*REKOMENDASI BUDIDAYA*/
+.text-box span {
+    text-decoration: none;
+    font-weight: 400;
+}
+.text-box p1 {
+    font-weight: 700;
+}
+
+/*TITLE BOX*/
+
+.all-title-box {
+    margin-top: 125px;
+    margin-bottom: 0;
+    background: url("../images/all-bg-title2.jpg") no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
+    padding: 70px 70px;
+    position: relative;
+}
+
+.all-title-box::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.col-caption h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    float: right;
+    padding: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+
+
+/*CARD*/
+.card-img-top {
+    border-radius: 50px;
+    padding: 20px;
+ 
+}
+.card {
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    background-color: #e1f7e1 ;
+}
+.card-body {
+    padding: 25px;
+    margin-top: -15px;
+}
+.card-body, h5 {
+    font-weight: 700;
+}
+.btn4{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #FF862C;
+    color: #000;
+    border-radius: 50px;
+    width: 120px;
+    &:hover{
+        color: white;
+        background: #FF862C;
+        cursor: pointer;
+    }
+}
+.card-title-budidaya {
+    text-align: center;
+    font-weight: 700;
+}
+.d-flax, h3 {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 200;
+    font-size: 20px;
+}
+
+/*SLIDER*/
+.btn1 {
+    background-color: #e1f7e1 ;
+    color: #000;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none;
+    &:hover{
+        color: white;
+        background: #FF862C;
+    }
+}
+
+.carousel-item {
+height: 100vh;
+min-height: 300px;
+}
+
+.carousel-caption {
+   bottom: 180px;
+   z-index: 2;
+}
+
+.carousel-caption h5{
+    font-size: 60px;
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.carousel-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/*CATEGORIES SHOP*/
+.btn2 {
+    background-color: #e1f7e1 ;
+    color: #000;
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none;
+    &:hover{
+        color: white;
+        background: #FF862C;
+    }
+}
+
+
+.shop-cat-box{
+    margin-bottom: 30px;
+    position: relative;
+    padding: 3px;
+    overflow: hidden;
+    border: 0px solid #000000;
+    box-shadow: 9px 9px 30px 0px rgba(0, 0, 0, 0.3);
+   -webkit-transition: all 0.3s ease;
+   transition: all 0.3s ease-in-out 0s;
+}
+
+.shop-cat-box img{
+    margin: -10px 0 0 -10px;
+    max-width: none;
+    width: -webkit-calc(100% + 10px);
+    width: calc(100% + 10px);
+    opacity: 0.9;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(10px,10px,0);
+    transform: translate3d(10px,10px,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.shop-cat-box:hover img{
+    opacity: 0.6;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.shop-cat-box a{
+    position: absolute;
+    z-index: 2;
+    bottom: 0px;
+    left: 0px;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    border: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 0px;
+}
+
+.box-add-products{
+   padding: 70px 0px;
+   background-color: #f4f4f4;
+}
+
+.offer-box{
+   position: relative;
+   overflow: hidden;
+}
+
+.offer-box-products{
+   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+   -webkit-transition: all 0.3s ease;
+   transition: all 0.3s ease-in-out 0s;
+}
+
+.offer-box-products:hover{
+   -webkit-transform: translateY(6px);
+   transform: translateY(6px);
+   box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+/*REKOMENDASI BUDIDAYA*/
+.btn3 {
+    text-align: center;
+    background-color: #e1f7e1 ;
+    color: #000;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none;
+    &:hover{
+        color: white;
+        background: #FF862C;
+    }
+}
+
+.container {
+    max-width: 100%;
+}
+
+#gambar.navbar:hover {
+    width: 130px;
+    height: 100px;
+}
+
+.gambar{
+    height: 150px;
+}
+.gambar1{
+    height: 125px;
+}
+
+.bg-g{
+    background: linear-gradient(to bottom, #F8F9FA 0%, #fdcac6 100%);
+}
+.text-pink{
+    color: #F8F9FA;
+}
+
+.btn{
+
+    color: black;
+    display: inline-block;
+    padding: 5px 15px;
+    text-decoration: none;
+    &:hover{
+        color: white;
+        background: #FF862C;
+    }
+}
+
+.image {
+    float: left; 
+    margin-right: 160px; 
+}
+
+.image .a {
+    width: 10px; 
+    height: auto; 
+}
+
+.container-home{
+    background-color: #f1fbff;
+    border-radius: 2%;
+}
+
+
+.toko{
+    font-weight: 1000;
+    font-size: xx-large;
+}
+
+
+.lihat{
+    float: right;
+}
