@@ -11,7 +11,7 @@ class Keranjang_model extends Model
         $cUrl = curl_init();
 
         $options = array(
-            CURLOPT_URL => 'https://asia-south1.gcp.data.mongodb-api.com/app/admin-ukadi/endpoint/getKeranjangByUsername?username=' . $username . '',
+            CURLOPT_URL => 'https://asia-south1.gcp.data.mongodb-api.com/app/admin-ukadi/endpoint/getKeranjangByUsername2?username=' . $username . '',
             CURLOPT_CUSTOMREQUEST => 'GET',
             CURLOPT_RETURNTRANSFER => true
         );

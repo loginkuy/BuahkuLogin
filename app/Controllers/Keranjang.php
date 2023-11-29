@@ -110,8 +110,8 @@ class Keranjang extends BaseController
                 $mail->isSMTP();
                 $mail->Host       = 'smtp.googlemail.com';
                 $mail->SMTPAuth   = true;
-                $mail->Username   = 'tugasgany@gmail.com';
-                $mail->Password   = 'wqke nehq unme lqxz';
+                $mail->Username   = 'kelompok11login@gmail.com';
+                $mail->Password   = 'pnok wrjg tprc blzp';
                 $mail->SMTPSecure = 'ssl';
                 $mail->Port       = 465;
                 $mail->setFrom('admin@buahku.com', 'Admin BuahKu');
@@ -119,7 +119,7 @@ class Keranjang extends BaseController
                 $mail->addReplyTo('admin@buahku.com', 'Admin BuahKu');
                 $mail->isHTML(true);
                 $mail->Subject = 'Pesanan Berhasil Dibuat';
-                $mail->Body    = 'Hi '.$nama_pemesan.'! <br> Pesananmu Berhasil Dibuat! <br> Dengan rincian : <br>Tanggal : '.$tanggal.'<br>Nomor Pesanan : '.$nopes.'<br>Anda bisa cek lengkap pesanan Anda <a href="'.base_url('Pesanan').'">di sini.</a><br>Terima kasih';
+                $mail->Body    = 'Hi '.$nama_pemesan.'! <br> Pesananmu Berhasil Dibuat! <br> <br> Dengan rincian : <br>Tanggal : '.$tanggal.'<br>Nomor Pesanan : '.$nopes.'<br>Anda bisa cek lengkap pesanan Anda <a href="'.base_url('Pesanan').'">di sini.</a><br><br>Terima kasih<br><br><br>Admin BuahKu';
                 $mail->send();
             } catch (Exception $e) {
             }
